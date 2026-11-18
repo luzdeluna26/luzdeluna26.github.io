@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luz de Luna · Tarot, rituales y sanación</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --bg:#f7f2fc;--surface:#ffffff;--text:#2a1240;--muted:#5d4a75;--gold:#8a6a00;--accent:#6b2fa0;--line:#dccdee;--btn-text:#ffffff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#12071d;--surface:#1c0e2c;--text:#f4eefc;--muted:#c4b5d9;--gold:#d9b44a;--accent:#9b5de5;--line:#3a2356;--btn-text:#12071d}
+}
+:root[data-theme="dark"]{--bg:#12071d;--surface:#1c0e2c;--text:#f4eefc;--muted:#c4b5d9;--gold:#d9b44a;--accent:#9b5de5;--line:#3a2356;--btn-text:#12071d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.2rem;line-height:1.6}
+h1,h2,h3{font-family:"Cinzel",Georgia,serif;font-weight:600;margin:0;color:var(--gold);letter-spacing:.04em}
+.wrap{max-width:880px;margin:0 auto;padding:0 1.25rem}
+.hero{text-align:center;padding:4.5rem 0 3.5rem;background:radial-gradient(circle at 50% 0%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 65%)}
+.moon{font-size:3rem;line-height:1}
+.hero h1{font-size:clamp(2.2rem,9vw,3.6rem);margin:.6rem 0 1.6rem}
+.hero p{max-width:32rem;margin:0 auto 1.6rem;color:var(--muted);font-size:1.3rem}
+.btn{display:inline-block;background:var(--gold);color:var(--btn-text);font-family:"Cinzel",Georgia,serif;font-weight:600;letter-spacing:.05em;text-decoration:none;padding:.85rem 1.6rem;border-radius:999px;font-size:1rem}
+.btn:hover{filter:brightness(1.1)}
+section{padding:2.5rem 0}
+.title{text-align:center;font-size:1.7rem;margin-bottom:1.4rem}
+.title::after{content:"✦";display:block;font-size:.9rem;margin-top:.4rem;color:var(--accent)}
+.about p{max-width:36rem;margin:0 auto;text-align:center;font-style:italic;color:var(--muted)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
+.card h3{font-size:1.05rem;margin-bottom:.5rem}
+.card p{margin:0;color:var(--muted);font-size:1.1rem}
+.card ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--muted);font-size:1.1rem}
+.feature{border:1px solid var(--gold);text-align:center;padding:1.8rem 1.3rem;margin-bottom:1rem}
+.feature h3{font-size:1.4rem}
+.intro{max-width:36rem;margin:0 auto 1.4rem;text-align:center;color:var(--muted)}
+.note{font-style:italic;font-size:1rem!important}
+.tag{display:inline-block;font-family:"Cinzel",Georgia,serif;font-size:.75rem;letter-spacing:.12em;color:var(--accent);margin-bottom:.4rem}
+.cta{text-align:center;padding:3rem 0 5rem}
+.cta p{color:var(--muted);margin:.6rem 0 1.4rem}
+footer{text-align:center;color:var(--muted);font-size:.95rem;padding-bottom:5rem}
+.float{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:5;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>☾ Luz de Luna ☾</h1>
+    <a class="btn" href="#servicios">Descubrí mis servicios ✦</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="about">
+    <h2 class="title">Quién soy</h2>
+    <p>“Soy Luz, tengo 26 años y soy mamá. Mi camino empezó en un momento de mucho dolor y soledad. Fue la meditación la que me abrió la puerta a este mundo: el autoconocimiento, la sanación y el tarot. Aprendí que sanar se hace desde el amor, y que lo que se repite en nuestra vida suele tener raíces más profundas, que vienen desde la infancia o incluso de otras vidas. Hoy acompaño a otras personas a llegar a esa raíz, a soltar lo que pesa y a volver a su luz.”</p>
+  </section>
+
+  <section>
+    <h2 class="title">Programa destacado</h2>
+    <div class="card feature">
+      <span class="tag">4 ENCUENTROS · 1 MES</span>
+      <h3>Programa Renacer</h3>
+      <p>Un encuentro por semana durante un mes. En cada uno trabajamos creencias limitantes y patrones repetitivos desde su origen, con rituales y actividades según lo que cada persona quiera tratar. Es un espacio para expresarte sin incomodidad, crecer y arrancar el problema de raíz. Incluye seguimiento con lecturas de tarot cuando hace falta.</p>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2 class="title">Servicios</h2>
+    <div class="grid">
+      <div class="card"><h3>Tarot</h3><p>Lecturas para ver con claridad tu momento y tus caminos.</p></div>
+      <div class="card"><h3>Registros akáshicos</h3><p>Una mirada profunda a tu historia y a tu propósito.</p></div>
+      <div class="card"><h3>Limpiezas energéticas</h3><ul><li>Con velas</li><li>Con péndulo hebreo</li></ul></div>
+      <div class="card"><h3>Casa y negocio</h3><ul><li>Limpieza de casa</li><li>Limpieza de negocio</li></ul></div>
+      <div class="card"><h3>Velas intencionadas</h3><p>Velas hechas e intencionadas por mí para tu intención, con sus oraciones y cuidados para usar en tu casa.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">Rituales personalizados</h2>
+    <p class="intro">Cada ritual se hace a medida: primero realizo una lectura de tarot para ver tu energía y, según tu caso y tu petición, preparo el ritual indicado para vos.</p>
+    <div class="grid">
+      <div class="card"><h3>Rituales de amor</h3><ul><li>Amor propio</li><li>Sanación de vínculos</li></ul><p class="note">Personalizado según tu petición.</p></div>
+      <div class="card"><h3>Rituales de trabajo</h3><ul><li>Para conseguir trabajo</li></ul><p class="note">Personalizado según tu petición.</p></div>
+      <div class="card"><h3>Rituales de apertura de caminos</h3><ul><li>Abrecaminos</li></ul><p class="note">Personalizado según tu petición.</p></div>
+      <div class="card"><h3>Rituales de dinero</h3><ul><li>Amarres de dinero</li></ul><p class="note">Personalizado según tu petición.</p></div>
+      <div class="card"><h3>Rituales de belleza y atracción</h3><ul><li>Atractivo y magnetismo</li></ul><p class="note">Personalizado según tu petición.</p></div>
+      <div class="card"><h3>Rituales de apertura de clientes</h3><ul><li>Más clientes y ventas</li></ul><p class="note">Personalizado según tu petición.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2 class="title">Consultá por tu servicio</h2>
+    <p>Los valores y la disponibilidad se consultan directamente conmigo.</p>
+    <a class="btn" href="https://wa.me/5492622537298?text=Hola%20Luz%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultarte" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+  </section>
+</main>
+
+<footer>© Luz de Luna ✦ 🌙 ✦</footer>
+<a class="btn float" href="https://wa.me/5492622537298?text=Hola%20Luz%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultarte" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
